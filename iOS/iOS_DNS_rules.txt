@@ -57,7 +57,7 @@
 ||bytednsdoc.com^
 # ------------------------------ TapTap过滤规则 ------------------------------ #
 ! pl.taptap.cn 该域名会影响TapTap上的视频播放，请放行
-!||pl.taptap.cn^
+! ||pl.taptap.cn^
 ||report.taptapdada.*^
 ||ipv*.taptapdada.com^
 ||http*://e.tapdb.net/^
