@@ -7,3 +7,119 @@
 ! Version: 2024/08/20
 
 ! Rules
+# ------------------------------ 微信过滤规则 ------------------------------ #
+||log.wechatpay.cn^
+||log.weixin.qq.com^
+||*dns.weixin.qq.*^$denyallow=dns.weixin.qq.com.cn
+||szlong.weixin.qq.com^
+||szminorshort.weixin.qq.com^
+||*proxy.weixin.qq.com^
+||prewxacode.wxqcloud.qq.*^
+||cwx.qlogo.cn^
+||*cloud.weixin.com^$denyallow=longcloud.weixin.com
+# ------------------------------ mihoyo 过滤规则 ------------------------------ #
+! 说明：下面列出的域名需要放行，否则，可能会影响游戏登录以及米哈游其他的一些服务的正常使用！
+! 需要放行域名的详细说明：
+! ----------Part 1 ---------- !
+! 米哈游游戏通用域名
+! user.mihoyo.com 米哈游通行证; webapi.account.mihoyo.com 米哈游WebAPI; 
+! gameapi-account.mihoyo.com 米哈游游戏内通行证API; sdk-static.mihoyo.com 静态SDK，需要保留，否则可能会影响相关Web网页使用。
+! webstatic.mihoyo.com、sdk-webstatic.mihoyo.com 米哈游网页服务域名，大地图、查询抽奖记录等等工具需要使用这些域名，必须放行。
+! waf-api-takumi.mihoyo.com、api-takumi-record.mihoyo.com、api-takumi-static.mihoyo.com 米游社部分游戏工具需要使用这些域名，请放行
+! act-upload.mihoyo.com、act.mihoyo.com、fastcdn.mihoyo.com、h5collector.mihoyo.com米哈游网页游戏活动需要使用这些域名，请放行
+! bbs-api.mihoyo.com 米游社帖子需要使用的域名，请放行
+! api-payment.mihoyo.com 米哈游游戏内支付域名，请放行
+! hyp-api.mihoyo.com 米哈游启动器检测游戏域名，拦截会导致启动器无限等待，请放行
+! ----------Part 2 ---------- !
+! 原神相关域名
+! ys.mihoyo.com 原神官网
+! hk4e-sdk.mihoyo.com、hk4e-api.mihoyo.com 原神游戏登录需要使用这些域名，必须放行，否则无法登录游戏
+! public-operation-hk4e.mihoyo.com、public-data-api.mihoyo.com 原神抽奖记录需要使用这些域名，请放行
+! ----------Part 3 ---------- !
+! 星穹铁道相关域名
+! sr.mihoyo.com 星穹铁道官网
+! act-webstatic.mihoyo.com、hkrpg-api.mihoyo.com、hkrpg-sdk.mihoyo.com、h5collector.mihoyo.com 游戏登录需要使用的域名，必须放行
+! ----------Part 4 ---------- !
+! 绝区零相关域名
+! act-nap-api.mihoyo.com 绝区零网页活动
+! nap-sdk.mihoyo.com 绝区零游戏登录域名
+! public-operation-nap.mihoyo.com 绝区零抽奖记录查询域名
+||*.mihoyo.com^$denyallow=ys.mihoyo.com|uploadstatic.mihoyo.com|user.mihoyo.com|webapi.account.mihoyo.com|gameapi-account.mihoyo.com|sdk-static.mihoyo.com|hk4e-sdk.mihoyo.com|hk4e-api.mihoyo.com|webstatic.mihoyo.com|waf-api-takumi.mihoyo.com|act.mihoyo.com|act-upload.mihoyo.com|public-operation-hk4e.mihoyo.com|api-takumi.mihoyo.com|passport-api.mihoyo.com|public-data-api.mihoyo.com|sdk-webstatic.mihoyo.com|api-takumi-record.mihoyo.com|bbs-api.mihoyo.com|sentry-inc.ssr.mihoyo.com|api-takumi-static.mihoyo.com|act.mihoyo.com|act-webstatic.mihoyo.com|sr.mihoyo.com|hkrpg-api.mihoyo.com|hkrpg-sdk.mihoyo.com|h5collector.mihoyo.com|fastcdn.mihoyo.com|act-nap-api.mihoyo.com|nap-sdk.mihoyo.com|api-payment.mihoyo.com|public-operation-nap.mihoyo.com|hyp-api.mihoyo.com
+# ------------------------------ 原神游戏过滤规则 ------------------------------ #
+||*.yuanshen.com^$denyallow=dispatchcnglobal.yuanshen.com|cngfdispatch.yuanshen.com|cnqddispatch.yuanshen.com|autopatchcn.yuanshen.com
+# ------------------------------ 抖音过滤规则 ------------------------------ #
+! douyinvod.com 如果拦截可能会导致抖音视频加载卡顿，因此放行
+# ||douyinvod.com^
+||*.douyincdn.com^
+||*.douyinliving.com^
+||*huoshanlive.com^
+||kuiniuca.com^
+||bytednsdoc.com^
+# ------------------------------ TapTap过滤规则 ------------------------------ #
+! pl.taptap.cn 该域名会影响TapTap上的视频播放，请放行
+!||pl.taptap.cn^
+||report.taptapdada.*^
+||ipv*.taptapdada.com^
+||http*://e.tapdb.net/^
+# ------------------------------ 哔哩哔哩过滤规则 ------------------------------ #
+||upos-sz-static.bilivideo.com^
+||*-cn-gotcha04.bilivideo.com^
+||miniapp.bilibili.com^
+||mall.bilibili.com^
+||bilicomic*.com^
+||apm-misaka.biliapi.net^
+||api.bilibili.net^
+# ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
+||impression.biligame.com^
+||gameinfoc.biligame.com^
+||ad-bili-data.biligame.com^
+||line*-realtime-api.biligame.net^
+||realtime.api.biligame.com^
+||*log.biligame.net^
+||*-sdk-app-api.biligame.net^
+# ------------------------------ 小红书过滤规则 ------------------------------ #
+||crash.xiaohongshu.com^
+# ------------------------------ 番茄小说过滤规则 ------------------------------ #
+||flive.ixigua.com^
+||log*-applog-lq.fqnovel.com^
+||*.fqnovelvod.com^
+||*-webcast-*.douyinpic.com^
+# ------------------------------ OPPO系统过滤规则 ------------------------------ #
+||ob*-dc*-cn.heytapmobi.com^
+# ------------------------------ 其他杂项过滤规则 ------------------------------ #
+||cyol.net^
+||4btcq*.cn^
+||sisi*.com^
+||subao*.cn^
+||ry*p*i.cn^
+||*.mc7*.com^
+||37.com^
+||qmga*.one^
+||666*.xyz^
+||yiren*.*^
+||5dwr*ux.com^
+||qy3.cn^
+||*xysec.com^
+|tzkt*.cn^
+||*rkjgs.com^
+||bcen*o.com^
+||888*www.com^
+||ccc*kkk*.com^
+||6fi3*.cn^
+||cl20*.com^
+||cn*log.com^
+# Google中国
+||www.google.cn^
+||fonts.googleapis.com^
+||safebrowsing.googleapis.com^
+
+||d.url.cn^
+||report.url.cn^
+||img.img*.com^
+||*pool.ntp.org^
+||ipv*only.arpa^
+||example.org^
+||lencr.org^
+||api.rainbow*.com^
+# 为了更好的广告过滤效果，我们将会封锁百度
+||www.baidu.com^
