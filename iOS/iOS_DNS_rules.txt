@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
-! Version: 2024/08/20
+! Version: 2024/08/31
 
 ! Rules
 # ------------------------------ 微信过滤规则 ------------------------------ #
@@ -96,6 +96,7 @@
 ||37.com^
 ||qmga*.one^
 ||666*.xyz^
+||ss311*.*^
 ||yiren*.*^
 ||5dwr*ux.com^
 ||qy3.cn^
