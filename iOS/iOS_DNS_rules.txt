@@ -17,9 +17,10 @@
 ||prewxacode.wxqcloud.qq.*^
 ||cwx.qlogo.cn^
 ||*cloud.weixin.com^$denyallow=longcloud.weixin.com
+
 # ------------------------------ miHoYo 过滤规则 ------------------------------ #
-! 说明：下面列出的域名需要放行，否则，可能会影响游戏登录以及米哈游其他的一些服务的正常使用！
-! 需要放行域名的详细说明：
+! 下面列出的域名需要放行，否则，可能会影响游戏登录以及米哈游其他的一些服务的正常使用！
+
 ! ----------Part 1 ---------- !
 ! 米哈游游戏通用域名
 ! user.mihoyo.com 米哈游通行证; webapi.account.mihoyo.com 米哈游WebAPI; 
@@ -39,15 +40,18 @@
 ! 星穹铁道相关域名
 ! sr.mihoyo.com 星穹铁道官网
 ! act-webstatic.mihoyo.com、hkrpg-api.mihoyo.com、hkrpg-sdk.mihoyo.com、h5collector.mihoyo.com 游戏登录需要使用的域名，需要放行
-！operation-webstatic.mihoyo.com 星穹铁道抽卡相关域名，需要放行
+！public-operation-hkrpg.mihoyo.com 星穹铁道抽卡相关域名，需要放行
 ! ----------Part 4 ---------- !
 ! 绝区零相关域名
 ! act-nap-api.mihoyo.com 绝区零网页活动
 ! nap-sdk.mihoyo.com 绝区零游戏登录域名
 ! public-operation-nap.mihoyo.com 绝区零抽奖记录查询域名
-||*.mihoyo.com^$denyallow=ys.mihoyo.com|uploadstatic.mihoyo.com|user.mihoyo.com|webapi.account.mihoyo.com|gameapi-account.mihoyo.com|sdk-static.mihoyo.com|hk4e-sdk.mihoyo.com|hk4e-api.mihoyo.com|webstatic.mihoyo.com|waf-api-takumi.mihoyo.com|act.mihoyo.com|act-upload.mihoyo.com|public-operation-hk4e.mihoyo.com|api-takumi.mihoyo.com|passport-api.mihoyo.com|public-data-api.mihoyo.com|sdk-webstatic.mihoyo.com|api-takumi-record.mihoyo.com|bbs-api.mihoyo.com|sentry-inc.ssr.mihoyo.com|api-takumi-static.mihoyo.com|act.mihoyo.com|act-webstatic.mihoyo.com|sr.mihoyo.com|hkrpg-api.mihoyo.com|hkrpg-sdk.mihoyo.com|h5collector.mihoyo.com|fastcdn.mihoyo.com|act-nap-api.mihoyo.com|nap-sdk.mihoyo.com|api-payment.mihoyo.com|operation-webstatic.mihoyo.com|public-operation-nap.mihoyo.com|hyp-api.mihoyo.com
+
+||*.mihoyo.com^$denyallow=ys.mihoyo.com|uploadstatic.mihoyo.com|user.mihoyo.com|webapi.account.mihoyo.com|gameapi-account.mihoyo.com|sdk-static.mihoyo.com|hk4e-sdk.mihoyo.com|hk4e-api.mihoyo.com|webstatic.mihoyo.com|waf-api-takumi.mihoyo.com|act.mihoyo.com|act-upload.mihoyo.com|public-operation-hk4e.mihoyo.com|api-takumi.mihoyo.com|passport-api.mihoyo.com|public-data-api.mihoyo.com|sdk-webstatic.mihoyo.com|api-takumi-record.mihoyo.com|bbs-api.mihoyo.com|sentry-inc.ssr.mihoyo.com|api-takumi-static.mihoyo.com|act.mihoyo.com|act-webstatic.mihoyo.com|sr.mihoyo.com|hkrpg-api.mihoyo.com|hkrpg-sdk.mihoyo.com|h5collector.mihoyo.com|fastcdn.mihoyo.com|act-nap-api.mihoyo.com|nap-sdk.mihoyo.com|api-payment.mihoyo.com|public-operation-nap.mihoyo.com|public-operation-hkrpg.mihoyo.com|hyp-api.mihoyo.com
+
 # ------------------------------ 原神游戏过滤规则 ------------------------------ #
 ||*.yuanshen.com^$denyallow=dispatchcnglobal.yuanshen.com|cngfdispatch.yuanshen.com|cnqddispatch.yuanshen.com|autopatchcn.yuanshen.com
+
 # ------------------------------ 抖音过滤规则 ------------------------------ #
 ! douyinvod.com 如果拦截可能会导致抖音视频加载卡顿，因此放行
 # ||douyinvod.com^
@@ -56,12 +60,14 @@
 ||*huoshanlive.com^
 ||kuiniuca.com^
 ||bytednsdoc.com^
+
 # ------------------------------ TapTap过滤规则 ------------------------------ #
 ! pl.taptap.cn 该域名会影响TapTap上的视频播放，请放行
 ! ||pl.taptap.cn^
 ||report.taptapdada.*^
 ||ipv*.taptapdada.com^
 ||http*://e.tapdb.net/^
+
 # ------------------------------ 哔哩哔哩过滤规则 ------------------------------ #
 ||upos-sz-static.bilivideo.com^
 ||*-cn-gotcha04.bilivideo.com^
@@ -70,6 +76,7 @@
 ||bilicomic*.com^
 ||apm-misaka.biliapi.net^
 ||api.bilibili.net^
+
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
 ||impression.biligame.com^
 ||gameinfoc.biligame.com^
@@ -78,15 +85,19 @@
 ||realtime.api.biligame.com^
 ||*log.biligame.net^
 ||*-sdk-app-api.biligame.net^
+
 # ------------------------------ 小红书过滤规则 ------------------------------ #
 ||crash.xiaohongshu.com^
+
 # ------------------------------ 番茄小说过滤规则 ------------------------------ #
 ||flive.ixigua.com^
 ||log*-applog-lq.fqnovel.com^
 ||*.fqnovelvod.com^
 ||*-webcast-*.douyinpic.com^
+
 # ------------------------------ OPPO系统过滤规则 ------------------------------ #
 ||ob*-dc*-cn.heytapmobi.com^
+
 # ------------------------------ 其他杂项过滤规则 ------------------------------ #
 ||cyol.net^
 ||4btcq*.cn^
