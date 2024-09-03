@@ -1,0 +1,7 @@
+!
+! Title:  Self-used AdGuard DNS Ruleset
+! Description: This self-use DNS ruleset is a supplement to AdGuard's DNS blocking ruleset on AdGuardHome. It is for personal use only. It is not updated regularly and it is not recommended to subscribe to it.
+! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
+! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
+! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
+! Version: 2024/09/03
