@@ -49,6 +49,7 @@
 # ------------------------------ ACE游戏反作弊系统规则 ------------------------------ #
 ||ace.qq.com^
 ||anticheatexpert.com^
+
 # ------------------------------ 微信过滤规则 ------------------------------ #
 ||log.wechatpay.cn^
 ||log.weixin.qq.com^
@@ -59,8 +60,9 @@
 ||prewxacode.wxqcloud.qq.*^
 ||cwx.qlogo.cn^
 ||*cloud.weixin.com^$denyallow=longcloud.weixin.com
+
 # ------------------------------ miHoYo 过滤规则 ------------------------------ #
-! 说明：下面列出的域名需要放行，否则，可能会影响游戏登录以及米哈游其他的一些服务的正常使用！
+! 下面列出的域名需要放行，否则，可能会影响游戏登录以及米哈游其他的一些服务的正常使用！
 
 ! ----------Part 1 ---------- !
 ! 米哈游游戏通用域名
@@ -81,14 +83,14 @@
 ! 星穹铁道相关域名
 ! sr.mihoyo.com 星穹铁道官网
 ! act-webstatic.mihoyo.com、hkrpg-api.mihoyo.com、hkrpg-sdk.mihoyo.com、h5collector.mihoyo.com 游戏登录需要使用的域名，需要放行
-！operation-webstatic.mihoyo.com 星穹铁道抽卡相关域名，需要放行
+！public-operation-hkrpg.mihoyo.com 星穹铁道抽卡相关域名，需要放行
 ! ----------Part 4 ---------- !
 ! 绝区零相关域名
 ! act-nap-api.mihoyo.com 绝区零网页活动
 ! nap-sdk.mihoyo.com 绝区零游戏登录域名
 ! public-operation-nap.mihoyo.com 绝区零抽奖记录查询域名
 
-||*.mihoyo.com^$denyallow=ys.mihoyo.com|uploadstatic.mihoyo.com|user.mihoyo.com|webapi.account.mihoyo.com|gameapi-account.mihoyo.com|sdk-static.mihoyo.com|hk4e-sdk.mihoyo.com|hk4e-api.mihoyo.com|webstatic.mihoyo.com|waf-api-takumi.mihoyo.com|act.mihoyo.com|act-upload.mihoyo.com|public-operation-hk4e.mihoyo.com|api-takumi.mihoyo.com|passport-api.mihoyo.com|public-data-api.mihoyo.com|sdk-webstatic.mihoyo.com|api-takumi-record.mihoyo.com|bbs-api.mihoyo.com|sentry-inc.ssr.mihoyo.com|api-takumi-static.mihoyo.com|act.mihoyo.com|act-webstatic.mihoyo.com|sr.mihoyo.com|hkrpg-api.mihoyo.com|hkrpg-sdk.mihoyo.com|h5collector.mihoyo.com|fastcdn.mihoyo.com|act-nap-api.mihoyo.com|nap-sdk.mihoyo.com|api-payment.mihoyo.com|operation-webstatic.mihoyo.com|public-operation-nap.mihoyo.com|hyp-api.mihoyo.com
+||*.mihoyo.com^$denyallow=ys.mihoyo.com|uploadstatic.mihoyo.com|user.mihoyo.com|webapi.account.mihoyo.com|gameapi-account.mihoyo.com|sdk-static.mihoyo.com|hk4e-sdk.mihoyo.com|hk4e-api.mihoyo.com|webstatic.mihoyo.com|waf-api-takumi.mihoyo.com|act.mihoyo.com|act-upload.mihoyo.com|public-operation-hk4e.mihoyo.com|api-takumi.mihoyo.com|passport-api.mihoyo.com|public-data-api.mihoyo.com|sdk-webstatic.mihoyo.com|api-takumi-record.mihoyo.com|bbs-api.mihoyo.com|sentry-inc.ssr.mihoyo.com|api-takumi-static.mihoyo.com|act.mihoyo.com|act-webstatic.mihoyo.com|sr.mihoyo.com|hkrpg-api.mihoyo.com|hkrpg-sdk.mihoyo.com|h5collector.mihoyo.com|fastcdn.mihoyo.com|act-nap-api.mihoyo.com|nap-sdk.mihoyo.com|api-payment.mihoyo.com|public-operation-nap.mihoyo.com|public-operation-hkrpg.mihoyo.com|hyp-api.mihoyo.com
 
 # ------------------------------ 原神游戏过滤规则 ------------------------------ #
 ||*.yuanshen.com^$denyallow=dispatchcnglobal.yuanshen.com|cngfdispatch.yuanshen.com|cnqddispatch.yuanshen.com|autopatchcn.yuanshen.com
