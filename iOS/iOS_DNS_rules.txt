@@ -110,11 +110,6 @@
 ||6fi3*.cn^
 ||cl20*.com^
 ||cn*log.com^
-# Google中国
-||www.google.cn^
-||fonts.googleapis.com^
-||safebrowsing.googleapis.com^
-
 ||d.url.cn^
 ||report.url.cn^
 ||img.img*.com^
