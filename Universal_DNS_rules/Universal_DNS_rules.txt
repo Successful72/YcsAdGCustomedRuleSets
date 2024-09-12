@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
-! Version: 2024/09/04
+! Version: 2024/09/12
 
 ! Rules
 # ---------------------------------- 白名单DNS规则 ---------------------------------- #
