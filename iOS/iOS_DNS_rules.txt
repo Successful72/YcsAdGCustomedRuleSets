@@ -4,19 +4,34 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
-! Version: 2024/09/03
+! Version: 2024/09/13
 
 ! Rules
+# ------------------------------ Apple过滤规则 ------------------------------ #
+! 其他app所使用的连接到App Store上的app推广弹窗(非直接跳转到App Store)
+||client-api.itunes.apple.com^
+
+# ------------------------------ Tencent过滤规则 ------------------------------ #
+||ams.game.qq.com^
+||www.qq.com^
+||*-upload.3g.qq.com^
+||hbd.url.cn^
+
 # ------------------------------ 微信过滤规则 ------------------------------ #
 ||log.wechatpay.cn^
 ||log.weixin.qq.com^
 ||*dns.weixin.*^$denyallow=dns.weixin.qq.com.cn
+||res.wx.qq.com^
+||wximg.wxs.qq.com^
+||wxsmw.wxs.qq.com^
 ||szlong.weixin.qq.com^
 ||szminorshort.weixin.qq.com^
 ||*proxy.weixin.qq.com^
 ||prewxacode.wxqcloud.qq.*^
+||mp.weixin.qq.com^
 ||cwx.qlogo.cn^
 ||*cloud.weixin.com^$denyallow=longcloud.weixin.com
+||support.weixin.qq.com^
 
 # ------------------------------ miHoYo 过滤规则 ------------------------------ #
 ! 下面列出的域名需要放行，否则，可能会影响游戏登录以及米哈游其他的一些服务的正常使用！
