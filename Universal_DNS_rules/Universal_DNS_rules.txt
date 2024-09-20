@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
-! Version: 2024/09/12
+! Version: 2024/09/20
 
 ! Rules
 # ---------------------------------- 白名单DNS规则 ---------------------------------- #
@@ -50,9 +50,12 @@
 # ||bkvv.video.qq.com^
 
 
-# ------------------------------ ACE游戏反作弊系统规则 ------------------------------ #
+# ------------------------------ ACE 游戏反作弊软件规则 ------------------------------ #
 ||ace.qq.com^
 ||anticheatexpert.com^
+
+# ------------------------------ BelltEye 游戏反作弊软件规则 ------------------------------ #
+||*.battleye.com^
 
 # ------------------------------ 微信过滤规则 ------------------------------ #
 ||log.wechatpay.cn^
@@ -102,6 +105,7 @@
 # ------------------------------ 抖音过滤规则 ------------------------------ #
 ! douyinvod.com 如果拦截可能会导致抖音视频加载卡顿，因此放行
 # ||douyinvod.com^
+！douyincdn.com 为加快抖音App在使用时加载视频的速度，需要放行
 # ||*.douyincdn.com^
 ||*.douyinliving.com^
 ||*huoshanlive.com^
