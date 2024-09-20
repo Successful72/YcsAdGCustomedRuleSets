@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
-! Version: 2024/09/13
+! Version: 2024/09/20
 
 ! Rules
 # ------------------------------ Apple过滤规则 ------------------------------ #
@@ -24,14 +24,12 @@
 ||log.wechatpay.cn^
 ||log.weixin.qq.com^
 ||*dns.weixin.*^$denyallow=dns.weixin.qq.com.cn
-||res.wx.qq.com^
 ||wximg.wxs.qq.com^
 ||wxsmw.wxs.qq.com^
 ||szlong.weixin.qq.com^
 ||szminorshort.weixin.qq.com^
 ||*proxy.weixin.qq.com^
 ||prewxacode.wxqcloud.qq.*^
-||mp.weixin.qq.com^
 ||cwx.qlogo.cn^
 ||*cloud.weixin.com^$denyallow=longcloud.weixin.com
 ||support.weixin.qq.com^
