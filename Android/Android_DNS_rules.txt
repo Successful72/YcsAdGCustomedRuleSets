@@ -4,6 +4,13 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Android/Android_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Android/Android_DNS_rules.txt
-! Version: 2024/08/20
+! Version: 2024/10/11
 
 ! Rules
+# ---------------------------------- 白名单DNS规则 ---------------------------------- #
+
+
+# ---------------------------------- vivo相关拦截DNS规则 ---------------------------------- #
+! 该域名用于阻止vivo相关系统App的更新
+||*upgrade.vivo.com.cn^
+
