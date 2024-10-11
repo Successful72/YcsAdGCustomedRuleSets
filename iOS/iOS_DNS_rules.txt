@@ -4,12 +4,16 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
-! Version: 2024/10/01
+! Version: 2024/10/11
 
 ! Rules
 # ------------------------------ Apple过滤规则 ------------------------------ #
 ! 其他app所使用的连接到App Store上的app推广弹窗(非直接跳转到App Store)
 ||client-api.itunes.apple.com^
+
+||cds.apple.com^
+||cl*.apple.com^
+||inappcheck.itunes.apple.com^
 
 # ------------------------------ Tencent过滤规则 ------------------------------ #
 ||ams.game.qq.com^
@@ -94,6 +98,8 @@
 ||api.bilibili.net^
 ! 哔哩哔哩APP首页大卡广告
 ||upos-sz-mirrorcoso*.bilivideo.com^ 
+
+||new-service.biliapi.net^
 
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
 ||impression.biligame.com^
