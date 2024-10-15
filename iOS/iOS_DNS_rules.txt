@@ -103,6 +103,7 @@
 ||member.bilibili.com^
 ||*-mirrorcos.bilivideo.com^
 ||core.bilivideo.com^
+||interface.bilibili.com^
 
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
 ||impression.biligame.com^
@@ -112,6 +113,9 @@
 ||realtime.api.biligame.com^
 ||*log.biligame.net^
 ||*-sdk-app-api.biligame.net^
+
+# ---------------------------------- 京东过滤规则 ---------------------------------- #
+||jddebug.com^
 
 # ------------------------------ 小红书过滤规则 ------------------------------ #
 ||crash.xiaohongshu.com^
