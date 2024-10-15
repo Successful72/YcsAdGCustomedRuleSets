@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
-! Version: 2024/10/01
+! Version: 2024/10/15
 
 ! Rules
 # ---------------------------------- 白名单DNS规则 ---------------------------------- #
@@ -156,8 +156,18 @@
 # ------------------------------ OPPO系统过滤规则 ------------------------------ #
 ||ob*-dc*-cn.heytapmobi.com^
 
+# ------------------------------ vivo系统过滤规则 ------------------------------ #
+||appstoreprt-stsdk.vivo.com.cn^
+||moni-onrt-stsdk.vivo.com.cn^
+||pointsdk.vivo.com.cn^
+||speedup.vivo.com.cn^
+||flutter.vivo.com.cn^
+||adxst.vivo.com.cn^
+||vcode-od.vivo.com.cn^
+||hf.appstore.vivo.com.cn^
+||apkself*dl.vivo.com.cn^
+
 # -------------------------------- 百度过滤规则 -------------------------------- #
-||www.baidu.com^
 ||b2b.baidu.com^
 
 # ------------------------------ 其他杂项过滤规则 ------------------------------ #
@@ -170,7 +180,7 @@
 ||37.com^
 ||qmga*.one^
 ||666*.xyz^
-||ss311*.*^
+||ss31*.*^
 ||yiren*.*^
 ||5dwr*ux.com^
 ||qy3.cn^
@@ -188,3 +198,5 @@
 ||img.img*.com^
 ||ipv*only.arpa^
 ||api.rainbow*.com^
+||delivery-data.dewu.com^
+||*dsp-toutiao.com^
