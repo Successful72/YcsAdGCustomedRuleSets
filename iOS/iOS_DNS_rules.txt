@@ -100,6 +100,9 @@
 ||upos-sz-mirrorcoso*.bilivideo.com^ 
 
 ||new-service.biliapi.net^
+||member.bilibili.com^
+||*-mirrorcos.bilivideo.com^
+||core.bilivideo.com^
 
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
 ||impression.biligame.com^
