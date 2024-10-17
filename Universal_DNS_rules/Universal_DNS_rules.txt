@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
-! Version: 2024/10/15
+! Version: 2024/10/17
 
 ! Rules
 # ---------------------------------- 白名单DNS规则 ---------------------------------- #
@@ -173,6 +173,9 @@
 ||fc*tn.baidu.com^
 ||ug.baidu.com^
 ||mbd.baidu.com^
+
+# ----------------- ------------ Microsoft过滤规则 ----------------------------- #
+||www.msn.com^
 
 # ------------------------------ 其他杂项过滤规则 ------------------------------ #
 ||cyol.net^
