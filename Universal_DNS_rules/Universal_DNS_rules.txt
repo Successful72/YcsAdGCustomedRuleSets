@@ -169,6 +169,10 @@
 
 # -------------------------------- 百度过滤规则 -------------------------------- #
 ||b2b.baidu.com^
+||hector*.baidu.com^
+||fc*tn.baidu.com^
+||ug.baidu.com^
+||mbd.baidu.com^
 
 # ------------------------------ 其他杂项过滤规则 ------------------------------ #
 ||cyol.net^
@@ -200,3 +204,4 @@
 ||api.rainbow*.com^
 ||delivery-data.dewu.com^
 ||*dsp-toutiao.com^
+||ocsp.sectigochina.com^
