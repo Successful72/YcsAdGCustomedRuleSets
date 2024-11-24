@@ -4,11 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
-<<<<<<< HEAD
 ! Version: 2024/11/24
-=======
-! Version: 2024/10/15
->>>>>>> 14843f66942e1e2e4d4e4452ed9e9e014508580f
 
 ! Rules
 # ------------------------------ Apple过滤规则 ------------------------------ #
