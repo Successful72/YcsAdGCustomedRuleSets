@@ -4,12 +4,20 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
+<<<<<<< HEAD
 ! Version: 2024/11/24
+=======
+! Version: 2024/10/15
+>>>>>>> 14843f66942e1e2e4d4e4452ed9e9e014508580f
 
 ! Rules
 # ------------------------------ Apple过滤规则 ------------------------------ #
 ! 其他app所使用的连接到App Store上的app推广弹窗(非直接跳转到App Store)
 ||client-api.itunes.apple.com^
+
+||cds.apple.com^
+||cl*.apple.com^
+||inappcheck.itunes.apple.com^
 
 # ------------------------------ Tencent过滤规则 ------------------------------ #
 ||ams.game.qq.com^
@@ -27,14 +35,12 @@
 ||log.wechatpay.cn^
 ||log.weixin.qq.com^
 ||*dns.weixin.*^$denyallow=dns.weixin.qq.com.cn
-||res.wx.qq.com^
 ||wximg.wxs.qq.com^
 ||wxsmw.wxs.qq.com^
 ||szlong.weixin.qq.com^
 ||szminorshort.weixin.qq.com^
 ||*proxy.weixin.qq.com^
 ||prewxacode.wxqcloud.qq.*^
-||mp.weixin.qq.com^
 ||cwx.qlogo.cn^
 ||*cloud.weixin.com^$denyallow=longcloud.weixin.com
 ||support.weixin.qq.com^
@@ -97,6 +103,16 @@
 ||bilicomic*.com^
 ||apm-misaka.biliapi.net^
 ||api.bilibili.net^
+<<<<<<< HEAD
+=======
+! 哔哩哔哩APP首页大卡广告
+||upos-sz-mirrorcoso*.bilivideo.com^ 
+
+||new-service.biliapi.net^
+||member.bilibili.com^
+||*-mirrorcos.bilivideo.com^
+||core.bilivideo.com^
+>>>>>>> 14843f66942e1e2e4d4e4452ed9e9e014508580f
 ||interface.bilibili.com^
 
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
@@ -107,6 +123,9 @@
 ||realtime.api.biligame.com^
 ||*log.biligame.net^
 ||*-sdk-app-api.biligame.net^
+
+# ---------------------------------- 京东过滤规则 ---------------------------------- #
+||jddebug.com^
 
 # ------------------------------ 小红书过滤规则 ------------------------------ #
 ||crash.xiaohongshu.com^
