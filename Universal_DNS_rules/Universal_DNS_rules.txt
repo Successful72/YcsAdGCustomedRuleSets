@@ -4,15 +4,20 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
-! Version: 2024/09/20
+! Version: 2024/10/17
 
 ! Rules
 # ---------------------------------- 白名单DNS规则 ---------------------------------- #
 ！拦截该域名会导致优酷Web端提示广告拦截，无法播放视频，该域名需放行
 @@||log.mmstat.com^
 
+# ---------------------------------- AdGuard本地域名规则 ---------------------------------- #
+！下面的域名必须拦截。它仅仅作为一个虚拟的域名用于过滤网页元素，不需要连接到任何服务器。如果放行，则网络连接速度将会严重减缓。
+||local.adguard.org^$important
+
 # ------------------------------ RaiDrive 广告过滤规则 ------------------------------ #
 ||*.raidrive.com^$denyallow=api.raidrive.com
+
 # ------------------------------ Tencent 移动端过滤规则 ------------------------------ #
 ||apdcdn.tc.qq.com^
 |*track.qq.com^
@@ -127,6 +132,8 @@
 ||bilicomic*.com^
 ||apm-misaka.biliapi.net^
 ||api.bilibili.net^
+! 哔哩哔哩APP首页大卡广告
+||upos-sz-mirrorcoso*.bilivideo.com^ 
 
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
 ||impression.biligame.com^
@@ -149,6 +156,27 @@
 # ------------------------------ OPPO系统过滤规则 ------------------------------ #
 ||ob*-dc*-cn.heytapmobi.com^
 
+# ------------------------------ vivo系统过滤规则 ------------------------------ #
+||appstoreprt-stsdk.vivo.com.cn^
+||moni-onrt-stsdk.vivo.com.cn^
+||pointsdk.vivo.com.cn^
+||speedup.vivo.com.cn^
+||flutter.vivo.com.cn^
+||adxst.vivo.com.cn^
+||vcode-od.vivo.com.cn^
+||hf.appstore.vivo.com.cn^
+||apkself*dl.vivo.com.cn^
+
+# -------------------------------- 百度过滤规则 -------------------------------- #
+||b2b.baidu.com^
+||hector*.baidu.com^
+||fc*tn.baidu.com^
+||ug.baidu.com^
+||mbd.baidu.com^
+
+# ----------------- ------------ Microsoft过滤规则 ----------------------------- #
+||www.msn.com^
+
 # ------------------------------ 其他杂项过滤规则 ------------------------------ #
 ||cyol.net^
 ||4btcq*.cn^
@@ -159,7 +187,7 @@
 ||37.com^
 ||qmga*.one^
 ||666*.xyz^
-||ss311*.*^
+||ss31*.*^
 ||yiren*.*^
 ||5dwr*ux.com^
 ||qy3.cn^
@@ -177,5 +205,6 @@
 ||img.img*.com^
 ||ipv*only.arpa^
 ||api.rainbow*.com^
-# 为了更好的广告过滤效果，我们将会封锁百度
-||www.baidu.com^
+||delivery-data.dewu.com^
+||*dsp-toutiao.com^
+||ocsp.sectigochina.com^
