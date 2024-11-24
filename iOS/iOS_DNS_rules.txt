@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/iOS/iOS_DNS_rules.txt
-! Version: 2024/09/13
+! Version: 2024/11/24
 
 ! Rules
 # ------------------------------ Apple过滤规则 ------------------------------ #
@@ -13,12 +13,15 @@
 
 # ------------------------------ Tencent过滤规则 ------------------------------ #
 ||ams.game.qq.com^
-
 ! Tencent部分资讯使用下面的域名，因此，该域名暂时封锁
 ||www.qq.com^
-
 ||*-upload.3g.qq.com^
 ||hbd.url.cn^
+! 腾讯视频爱玩游戏
+||iwan.*^
+! Yoo短视频
+||yoo.gtimg.com^
+
 
 # ------------------------------ 微信过滤规则 ------------------------------ #
 ||log.wechatpay.cn^
@@ -94,6 +97,7 @@
 ||bilicomic*.com^
 ||apm-misaka.biliapi.net^
 ||api.bilibili.net^
+||interface.bilibili.com^
 
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
 ||impression.biligame.com^
@@ -112,9 +116,6 @@
 ||log*-applog-lq.fqnovel.com^
 ||*.fqnovelvod.com^
 ||*-webcast-*.douyinpic.com^
-
-# ------------------------------ OPPO系统过滤规则 ------------------------------ #
-||ob*-dc*-cn.heytapmobi.com^
 
 # ------------------------------ 其他杂项过滤规则 ------------------------------ #
 ||cyol.net^
