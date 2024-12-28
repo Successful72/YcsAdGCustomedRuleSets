@@ -12,13 +12,5 @@
 
 # ---------------------------------- vivo相关拦截DNS规则 ---------------------------------- #
 ! 该域名用于阻止vivo相关系统App的更新
-||*upgrade.vivo.com.cn^
-||appstoreprt-stsdk.vivo.com.cn^
-||moni-onrt-stsdk.vivo.com.cn^
-||pointsdk.vivo.com.cn^
-||speedup.vivo.com.cn^
-||flutter.vivo.com.cn^
-||adxst.vivo.com.cn^
-||vcode-od.vivo.com.cn^
-||hf.appstore.vivo.com.cn^
-||apkself*dl.vivo.com.cn^
+||appupgrade.vivo.com.cn^
+
