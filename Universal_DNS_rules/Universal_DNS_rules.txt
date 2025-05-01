@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Successful72/YcsAdGCustomedRuleSets
 ! Source Page: https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
 ! Mirror Source Page: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Successful72/YcsAdGCustomedRuleSets/main/Universal_DNS_rules/Universal_DNS_rules.txt
-! Version: 2025/04/15
+! Version: 2025/05/01
 
 ! Rules
 # ---------------------------------- 白名单DNS规则 ---------------------------------- #
@@ -139,6 +139,8 @@
 ! 哔哩哔哩APP首页大卡广告
 ||upos-sz-mirrorcoso*.bilivideo.com^ 
 
+||cm.bilibili.com^
+
 # ------------------------------ 哔哩哔哩游戏过滤规则 ------------------------------ #
 ||impression.biligame.com^
 ||gameinfoc.biligame.com^
@@ -212,3 +214,4 @@
 ||delivery-data.dewu.com^
 ||*dsp-toutiao.com^
 ||ocsp.sectigochina.com^
+||*.in-addr.arpa^
